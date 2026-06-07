@@ -526,9 +526,9 @@ function MarqueeTitle() {
 
 function About() {
   return (
-    <section id="about" className="relative overflow-hidden bg-[#070707] py-24 text-white md:py-32">
+    <section id="about" className="relative overflow-hidden bg-[#070707] py-12 text-white md:py-32">
       <MarqueeTitle />
-      <div className="about-grid mx-auto grid max-w-7xl items-center gap-12 px-5 pt-16 md:grid-cols-[0.85fr_1.15fr] md:px-8 md:pt-24">
+      <div className="about-grid mx-auto grid max-w-7xl items-center gap-8 px-5 pt-12 md:grid-cols-[0.85fr_1.15fr] md:gap-12 md:px-8 md:pt-24">
         <Reveal className="about-visual-column">
           <p className="section-label">About / My Story</p>
           <motion.div
@@ -544,7 +544,7 @@ function About() {
             />
           </motion.div>
         </Reveal>
-        <div className="about-copy space-y-10">
+        <div className="about-copy space-y-6 md:space-y-10">
           <Reveal>
             <h2 className="max-w-4xl text-5xl font-black uppercase leading-[0.9] text-white md:text-7xl lg:text-[6.5rem]">
               I&apos;m Zohaib Sajjad
@@ -569,10 +569,10 @@ function About() {
 
 function Capabilities() {
   return (
-    <section id="skills" className="bg-ink px-5 py-24 text-white md:px-8 md:py-32">
+    <section id="skills" className="bg-ink px-5 py-12 text-white md:px-8 md:py-32">
       <div className="mx-auto max-w-7xl">
         <Reveal>
-          <p className="section-label mb-8 md:mb-10">What I Do</p>
+          <p className="section-label mb-6 md:mb-10">What I Do</p>
         </Reveal>
         <div className="flex flex-wrap gap-3 md:gap-4">
           {capabilities.map((item, index) => (
@@ -622,10 +622,10 @@ function AnimatedCounter({ value, suffix, decimals = 0 }) {
 
 function Results() {
   return (
-    <section id="results" className="relative overflow-hidden bg-[#080808] px-5 py-24 text-white md:px-8 md:py-32">
+    <section id="results" className="relative overflow-hidden bg-[#080808] px-5 py-12 text-white md:px-8 md:py-32">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_85%_20%,rgba(240,163,91,0.14),transparent_30%)]" />
       <div className="relative mx-auto max-w-7xl">
-        <Reveal className="mb-12">
+        <Reveal className="mb-8 md:mb-12">
           <p className="section-label">Results / Stats</p>
           <h2 className="mt-4 text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[9rem] lg:text-[11rem]">
             Proof in
@@ -660,9 +660,9 @@ function ProjectCard({ project, index }) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
       transition={{ duration: 0.7, delay: index * 0.08 }}
-      className="group grid overflow-hidden border-t border-white/12 py-10 md:grid-cols-[0.86fr_1.14fr] md:gap-16 md:py-16"
+      className="group grid overflow-hidden border-t border-white/12 py-8 md:grid-cols-[0.86fr_1.14fr] md:gap-16 md:py-16"
     >
-      <div className="flex flex-col justify-between gap-8">
+      <div className="flex flex-col justify-between gap-6 md:gap-8">
         <div>
           <p className="project-label">{project.eyebrow}</p>
           <h3 className="mt-5 text-5xl font-black uppercase leading-[0.85] text-white md:text-7xl lg:text-8xl">
@@ -680,11 +680,11 @@ function ProjectCard({ project, index }) {
           View Case Study <ArrowUpRight size={16} />
         </button>
       </div>
-      <div className="mt-8 flex flex-col justify-end md:mt-0">
+      <div className="mt-6 flex flex-col justify-end md:mt-0">
         <p className="max-w-3xl text-2xl font-medium leading-snug text-white/76 md:text-3xl">
           {project.intro}
         </p>
-        <p className="project-label mt-9">Result Highlight</p>
+        <p className="project-label mt-8 md:mt-9">Result Highlight</p>
         <p className="mt-3 text-3xl font-black uppercase leading-tight text-white md:text-5xl">
           {project.results[0]}
         </p>
@@ -695,7 +695,7 @@ function ProjectCard({ project, index }) {
 
 function Projects() {
   return (
-    <section id="work" className="bg-ink px-5 py-24 text-white md:px-8 md:py-32">
+    <section id="work" className="bg-ink px-5 py-12 text-white md:px-8 md:py-32">
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-8 md:mb-16">
           <p className="section-label">Projects</p>
@@ -720,7 +720,7 @@ function Contact() {
   ];
 
   return (
-    <section id="contact" className="relative overflow-hidden bg-ink px-5 py-28 text-white md:px-8 md:py-36">
+    <section id="contact" className="relative overflow-hidden bg-ink px-5 py-16 text-white md:px-8 md:py-36">
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_20%,rgba(240,163,91,0.17),transparent_33%)]" />
       <div className="relative mx-auto max-w-7xl">
         <Reveal>
@@ -729,7 +729,7 @@ function Contact() {
             Let&apos;s build something that gets attention
           </h2>
         </Reveal>
-        <Reveal delay={0.1} className="mt-12 flex flex-wrap gap-3">
+        <Reveal delay={0.1} className="mt-8 md:mt-12 flex flex-wrap gap-3">
           {buttons.map(([label, href, Icon]) => (
             <motion.a
               key={label}
@@ -772,7 +772,7 @@ function CaseStudy({ project, onOpenImage }) {
 
   return (
     <main ref={containerRef} className="case-study-main min-h-screen bg-ink text-white">
-      <section className="case-hero-section relative isolate min-h-[92vh] overflow-hidden px-5 pb-20 pt-28 md:px-8 md:pt-36">
+      <section className="case-hero-section relative isolate min-h-[85vh] overflow-hidden px-5 pb-12 pt-24 md:min-h-[92vh] md:px-8 md:pt-36">
         <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
         <motion.div style={{ y }} className="absolute -right-12 top-40 h-[55vh] w-[70vw] opacity-20 blur-2xl">
           <img src={project.preview} alt="" className="h-full w-full object-cover" />
@@ -784,7 +784,7 @@ function CaseStudy({ project, onOpenImage }) {
               window.location.hash = "";
               requestAnimationFrame(() => scrollToId("work"));
             }}
-            className="mb-10 inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/[0.035] px-5 py-3 text-xs font-bold uppercase text-white/80 transition hover:border-ember/60 hover:text-white"
+            className="mb-6 md:mb-10 inline-flex items-center gap-3 rounded-full border border-white/12 bg-white/[0.035] px-5 py-3 text-xs font-bold uppercase text-white/80 transition hover:border-ember/60 hover:text-white"
           >
             <ArrowLeft size={15} /> Back to Work
           </button>
@@ -792,22 +792,22 @@ function CaseStudy({ project, onOpenImage }) {
             <p className="project-label">
               {project.eyebrow}
             </p>
-            <h1 className="case-hero-title mt-5 max-w-full break-words text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[6rem] lg:text-[7.2rem]">
+            <h1 className="case-hero-title mt-4 md:mt-5 max-w-full break-words text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[6rem] lg:text-[7.2rem]">
               {project.title}
             </h1>
-            <p className="mt-8 max-w-3xl text-xl leading-relaxed text-white/70 md:text-2xl">
+            <p className="mt-6 md:mt-8 max-w-3xl text-xl leading-relaxed text-white/70 md:text-2xl">
               {project.intro}
             </p>
           </Reveal>
         </div>
       </section>
 
-      <section className="px-5 py-20 md:px-8 md:py-28">
-        <div className="mx-auto grid max-w-7xl gap-12 md:grid-cols-[0.72fr_1.28fr]">
+      <section className="px-5 py-12 md:px-8 md:py-28">
+        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.72fr_1.28fr] md:gap-12">
           <Reveal>
             <p className="project-label">Project Intro</p>
           </Reveal>
-          <div className="case-metric-grid grid gap-5 md:grid-cols-3">
+          <div className="case-metric-grid grid gap-4 md:grid-cols-3 md:gap-5">
             {project.metrics.map((metric) => (
               <motion.div
                 key={metric.label}
@@ -830,7 +830,7 @@ function CaseStudy({ project, onOpenImage }) {
       <CaseList title="Results" items={project.results} featured />
       <VisualProof project={project} onOpenImage={onOpenImage} />
 
-      <section className="px-5 pb-28 pt-12 md:px-8">
+      <section className="px-5 pb-16 pt-8 md:px-8 md:pb-28 md:pt-12">
         <div className="mx-auto flex max-w-7xl flex-wrap gap-3">
           {project.profile && (
             <a
@@ -860,8 +860,8 @@ function CaseStudy({ project, onOpenImage }) {
 
 function CaseSection({ title, body }) {
   return (
-    <section className="border-t border-white/10 px-5 py-20 md:px-8 md:py-24">
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.72fr_1.28fr]">
+    <section className="border-t border-white/10 px-5 py-12 md:px-8 md:py-24">
+      <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[0.72fr_1.28fr] md:gap-10">
         <Reveal>
           <p className="project-label">{title}</p>
         </Reveal>
@@ -877,8 +877,8 @@ function CaseSection({ title, body }) {
 
 function CaseList({ title, items, featured = false }) {
   return (
-    <section className={`case-list-section border-t border-white/10 px-5 py-20 md:px-8 md:py-24 ${featured ? "case-results-section" : ""}`}>
-      <div className="mx-auto grid max-w-7xl gap-10 md:grid-cols-[0.72fr_1.28fr]">
+    <section className={`case-list-section border-t border-white/10 px-5 py-12 md:px-8 md:py-24 ${featured ? "case-results-section" : ""}`}>
+      <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[0.72fr_1.28fr] md:gap-10">
         <Reveal>
           <p className="project-label">{title}</p>
         </Reveal>
@@ -907,16 +907,16 @@ function CaseList({ title, items, featured = false }) {
 
 function VisualProof({ project, onOpenImage }) {
   return (
-    <section className="border-t border-white/10 px-5 py-20 md:px-8 md:py-28">
+    <section className="border-t border-white/10 px-5 py-12 md:px-8 md:py-28">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <p className="project-label">Visual Proof</p>
-          <h2 className="mt-5 text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[8.5rem] lg:text-[10rem]">
+          <h2 className="mt-4 text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:mt-5 md:text-[8.5rem] lg:text-[10rem]">
             Real Assets.
             <span className="block text-white/35">Real Results.</span>
           </h2>
         </Reveal>
-        <div className="mt-16 grid gap-16 md:gap-24">
+        <div className="mt-10 grid gap-10 md:mt-24 md:gap-24">
           {project.images.map((image, index) => (
             <motion.figure
               key={image.src}

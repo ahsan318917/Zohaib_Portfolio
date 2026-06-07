@@ -699,18 +699,18 @@ img {
 
   .hero-personal {
     min-height: auto;
-    padding-top: clamp(6.5rem, 12svh, 8rem);
-    padding-bottom: clamp(2.5rem, 6svh, 4rem);
+    padding-top: clamp(5.5rem, 10svh, 7rem);
+    padding-bottom: clamp(1.5rem, 4svh, 2.5rem);
   }
 
   .hero-personal-shell {
     min-height: auto;
-    padding-top: clamp(1.5rem, 4svh, 3rem);
+    padding-top: clamp(1rem, 3svh, 2rem);
   }
 
   .hero-stage {
     grid-template-columns: 1fr;
-    gap: clamp(2rem, 5svh, 3.5rem);
+    gap: clamp(1.5rem, 4svh, 2.5rem);
     text-align: center;
   }
 
@@ -730,11 +730,11 @@ img {
   .hero-person {
     order: 1;
     width: min(82vw, 24rem);
-    height: clamp(20rem, 52svh, 28rem);
+    height: clamp(18rem, 48svh, 26rem);
   }
 
   .hero-bg-name {
-    top: clamp(5rem, 10svh, 6.5rem);
+    top: clamp(4.5rem, 9svh, 6rem);
     font-size: clamp(4.5rem, 18vw, 9rem);
   }
 
@@ -742,19 +742,19 @@ img {
     position: relative;
     inset: auto;
     bottom: auto;
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     opacity: 0.65;
   }
 
   /* REUSABLE SECTION SPACING */
   #about, #results, #work, #contact {
-    padding-top: clamp(4.5rem, 10vw, 6.5rem);
-    padding-bottom: clamp(4.5rem, 10vw, 6.5rem);
+    padding-top: clamp(3rem, 8vw, 4.5rem);
+    padding-bottom: clamp(3rem, 8vw, 4.5rem);
   }
 
   #about .about-grid {
     grid-template-columns: 1fr;
-    gap: 3.5rem;
+    gap: 2.5rem;
     text-align: center;
   }
 
@@ -867,7 +867,7 @@ img {
 /* SMARTPHONES (BELOW 480PX) */
 @media (max-width: 480px) {
   .hero-bg-name {
-    top: 5.5rem;
+    top: 4.8rem;
     font-size: clamp(4rem, 20vw, 6rem);
   }
 
@@ -877,7 +877,7 @@ img {
 
   .hero-description {
     font-size: 1rem;
-    max-width: 20rem;
+    max-width: 22rem;
   }
 
   .hero-marquee-track {
@@ -911,6 +911,11 @@ img {
 
   .hero-heading {
     font-size: clamp(1.9rem, 11vw, 2.4rem);
+  }
+
+  #about, #results, #work, #contact {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
   }
 
   #about h2 {
