@@ -772,7 +772,7 @@ function CaseStudy({ project, onOpenImage }) {
 
   return (
     <main ref={containerRef} className="case-study-main min-h-screen bg-ink text-white">
-      <section className="case-hero-section relative isolate min-h-[85vh] overflow-hidden px-5 pb-12 pt-24 md:min-h-[92vh] md:px-8 md:pt-36">
+      <section className="case-hero-section relative isolate overflow-hidden px-5 pb-8 pt-20 md:min-h-[92vh] md:px-8 md:pb-12 md:pt-36">
         <div className={`absolute inset-0 bg-gradient-to-br ${project.accent}`} />
         <motion.div style={{ y }} className="absolute -right-12 top-40 h-[55vh] w-[70vw] opacity-20 blur-2xl">
           <img src={project.preview} alt="" className="h-full w-full object-cover" />
@@ -802,7 +802,7 @@ function CaseStudy({ project, onOpenImage }) {
         </div>
       </section>
 
-      <section className="px-5 py-12 md:px-8 md:py-28">
+      <section className="px-5 pb-10 pt-2 md:px-8 md:py-28">
         <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-[0.72fr_1.28fr] md:gap-12">
           <Reveal>
             <p className="project-label">Project Intro</p>
@@ -830,7 +830,7 @@ function CaseStudy({ project, onOpenImage }) {
       <CaseList title="Results" items={project.results} featured />
       <VisualProof project={project} onOpenImage={onOpenImage} />
 
-      <section className="px-5 pb-16 pt-8 md:px-8 md:pb-28 md:pt-12">
+      <section className="px-5 pb-12 pt-4 md:px-8 md:pb-28 md:pt-12">
         <div className="mx-auto flex max-w-7xl flex-wrap gap-3">
           {project.profile && (
             <a
@@ -860,7 +860,7 @@ function CaseStudy({ project, onOpenImage }) {
 
 function CaseSection({ title, body }) {
   return (
-    <section className="border-t border-white/10 px-5 py-12 md:px-8 md:py-24">
+    <section className="border-t border-white/10 px-5 py-10 md:px-8 md:py-24">
       <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[0.72fr_1.28fr] md:gap-10">
         <Reveal>
           <p className="project-label">{title}</p>
@@ -877,7 +877,7 @@ function CaseSection({ title, body }) {
 
 function CaseList({ title, items, featured = false }) {
   return (
-    <section className={`case-list-section border-t border-white/10 px-5 py-12 md:px-8 md:py-24 ${featured ? "case-results-section" : ""}`}>
+    <section className={`case-list-section border-t border-white/10 px-5 py-10 md:px-8 md:py-24 ${featured ? "case-results-section" : ""}`}>
       <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-[0.72fr_1.28fr] md:gap-10">
         <Reveal>
           <p className="project-label">{title}</p>
@@ -907,7 +907,7 @@ function CaseList({ title, items, featured = false }) {
 
 function VisualProof({ project, onOpenImage }) {
   return (
-    <section className="border-t border-white/10 px-5 py-12 md:px-8 md:py-28">
+    <section className="border-t border-white/10 px-5 py-10 md:px-8 md:py-28">
       <div className="mx-auto max-w-7xl">
         <Reveal>
           <p className="project-label">Visual Proof</p>

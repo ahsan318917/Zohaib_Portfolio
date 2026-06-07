@@ -599,8 +599,10 @@ img {
   text-wrap: balance;
 }
 
-.case-study-main .case-hero-section {
-  min-height: min(92svh, 52rem);
+@media (min-width: 921px) {
+  .case-study-main .case-hero-section {
+    min-height: min(92svh, 52rem);
+  }
 }
 
 .case-section-lead {
