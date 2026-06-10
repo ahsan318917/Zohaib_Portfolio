@@ -834,6 +834,25 @@ img {
   }
 }
 
+/* MOBILE TYPOGRAPHY & HIERARCHY ADJUSTMENTS (UP TO 767PX) */
+@media (max-width: 767px) {
+  .section-label {
+    justify-content: flex-start;
+  }
+
+  .section-label::before {
+    display: none;
+  }
+
+  /* Left-align headings and content containers to match the labels */
+  #about .about-grid,
+  #results h2,
+  #work h2,
+  #contact h2 {
+    text-align: left;
+  }
+}
+
 /* SMALLER PHONES (BELOW 560PX) */
 @media (max-width: 560px) {
   .site-header {
