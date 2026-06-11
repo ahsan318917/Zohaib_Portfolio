@@ -627,7 +627,7 @@ function Results() {
       <div className="relative mx-auto max-w-7xl">
         <Reveal className="mb-8 md:mb-12">
           <p className="section-label">Results / Stats</p>
-          <h2 className="mt-4 text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[9rem] lg:text-[11rem]">
+          <h2 className="mt-4 text-6xl font-black uppercase leading-[0.92] text-white sm:text-7xl md:text-[9rem] md:leading-[0.82] lg:text-[11rem]">
             Proof in
             <span className="block text-white/38">Numbers</span>
           </h2>
