@@ -699,7 +699,7 @@ function Projects() {
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-8 md:mb-16">
           <p className="section-label">Projects</p>
-            <h2 className="mt-4 text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl md:text-[10rem] md:leading-[0.78] lg:text-[13rem]">
+            <h2 className="mt-4 text-6xl font-black uppercase leading-[0.95] text-white sm:text-8xl md:text-[10rem] md:leading-[0.78] lg:text-[13rem]">
             Selected
             <span className="block text-white/35">Work</span>
           </h2>
