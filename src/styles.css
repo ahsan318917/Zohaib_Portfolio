@@ -652,7 +652,8 @@ img {
   }
 
   .case-hero-title {
-    font-size: clamp(2.7rem, 8.5vw, 4.9rem) !important;
+    font-size: clamp(2.15rem, 9vw, 4.9rem) !important;
+    letter-spacing: -0.04em;
     white-space: normal;
     text-wrap: balance;
   }

@@ -699,7 +699,7 @@ function Projects() {
       <div className="mx-auto max-w-7xl">
         <Reveal className="mb-8 md:mb-16">
           <p className="section-label">Projects</p>
-          <h2 className="mt-4 text-6xl font-black uppercase leading-[0.78] text-white sm:text-8xl md:text-[10rem] lg:text-[13rem]">
+            <h2 className="mt-4 text-6xl font-black uppercase leading-[0.88] text-white sm:text-8xl md:text-[10rem] md:leading-[0.78] lg:text-[13rem]">
             Selected
             <span className="block text-white/35">Work</span>
           </h2>
@@ -792,7 +792,7 @@ function CaseStudy({ project, onOpenImage }) {
             <p className="project-label">
               {project.eyebrow}
             </p>
-            <h1 className="case-hero-title mt-4 md:mt-5 max-w-full break-words text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[6rem] lg:text-[7.2rem]">
+            <h1 className="case-hero-title mt-4 md:mt-5 max-w-full break-normal text-6xl font-black uppercase leading-[0.82] text-white sm:text-7xl md:text-[6rem] lg:text-[7.2rem]">
               {project.title}
             </h1>
             <p className="mt-6 md:mt-8 max-w-3xl text-xl leading-relaxed text-white/70 md:text-2xl">
