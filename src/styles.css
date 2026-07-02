@@ -381,18 +381,6 @@ img {
   }
 }
 
-@media (min-width: 1600px) {
-  .hero-person {
-    margin-left: -12.5rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .hero-person {
-    margin-left: -16rem;
-  }
-}
-
 .hero-person-inner,
 .hero-person-glow,
 .hero-person-shadow,
